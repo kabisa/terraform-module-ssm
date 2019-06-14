@@ -2,7 +2,7 @@ variable "ssm_s3_policy_name" {
   default = "ssm_s3_policy"
 }
 
-variable "ec_instance_role_arn" {
+variable "ec2_instance_role_arn" {
   default = "the instance role which is attached to the instance profile"
 }
 

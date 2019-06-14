@@ -1,11 +1,11 @@
 resource "aws_iam_role_policy_attachment" "ec2_role_ssm_policy_attachment" {
-  role       = "${var.ec_instance_role_arn}"
+  role       = "${var.ec2_instance_role_arn}"
   policy_arn = "arn:aws:iam::aws:policy/service-role/AmazonEC2RoleforSSM"
 }
 
 resource "aws_iam_role_policy" "ssm_bucket_policy" {
   name = "${var.ssm_s3_policy_name}"
-  role = "${var.ec_instance_role_arn}"
+  role = "${var.ec2_instance_role_arn}"
 
   policy = <<EOF
 {
