@@ -9,3 +9,4 @@ variable "ec2_instance_role_name" {
 variable "ssm_bucket_path" {
   default = "bucket name and/or path where the logging is saved"
 }
+
